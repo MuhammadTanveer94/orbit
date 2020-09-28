@@ -78,6 +78,7 @@
   },
   "dependencies": {
     "@adeira/js": "^1.2.4",
+    "@csstools/convert-colors": "^2.0.0",
     "@kiwicom/orbit-design-tokens": "~0.11.0"
   },
   "devDependencies": {

@@ -1,0 +1,17 @@
+// @flow
+import * as React from "react";
+
+import type { Globals } from "../common/common.js.flow";
+import typeof WizardStepComponent from "./WizardStep";
+
+export type Props = {|
+  ...Globals,
+  +id: string,
+  +completedSteps: number,
+  +activeStep: number,
+  +children: React.ChildrenArray<React.Element<WizardStepComponent>>,
+  +onChangeStep?: (stepNumber: number) => void,
+|};
+
+declare export default React.ComponentType<Props>;
+declare export var WizardStep: WizardStepComponent;

@@ -1,0 +1,18 @@
+// @flow
+import * as React from "react";
+
+import type { Globals, Translation } from "../../common/common.js.flow";
+
+type Status = "available" | "completed" | "disabled";
+
+export type Props = {|
+  ...Globals,
+  +number?: number,
+  +status?: Status,
+  +nextStepStatus?: Status,
+  +active?: boolean,
+  +title: Translation,
+  +onClick?: (event: SyntheticEvent<HTMLElement>) => void,
+|};
+
+declare export default React.ComponentType<Props>;
